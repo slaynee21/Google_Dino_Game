@@ -1,0 +1,10 @@
+# ninja log v5
+7	984	6781943869625829	CMakeFiles/game1.dir/cScore.cpp.obj	95eb3ede9a078d2f
+4	992	6781943869705613	CMakeFiles/game1.dir/cHeartBonus.cpp.obj	50ab9d499962b5ac
+5	993	6781943869715587	CMakeFiles/game1.dir/cPlayer.cpp.obj	a9ee5a19d1047649
+2	998	6781943869795369	CMakeFiles/game1.dir/cCactus.cpp.obj	229041f475501cb8
+1	1008	6781943869885130	CMakeFiles/game1.dir/cBird.cpp.obj	9437133c186c6623
+7	686	6781944296266109	CMakeFiles/game1.dir/main.cpp.obj	be8c0ea84a45a512
+9	714	6781944296545338	CMakeFiles/game1.dir/cScoreBonus.cpp.obj	4b9502180c36fcbc
+4	781	6781944983134403	CMakeFiles/game1.dir/cGame.cpp.obj	32bab36745046a21
+5	906	6781947491581747	CMakeFiles/game1.dir/cGame.cpp.obj	32bab36745046a21

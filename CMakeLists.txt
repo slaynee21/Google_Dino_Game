@@ -1,0 +1,142 @@
+cmake_minimum_required(VERSION 3.22)
+project(game1)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(.)
+include_directories(packages)
+include_directories(packages/sfml_system.2.5.1)
+include_directories(packages/sfml_system.2.5.1/build)
+include_directories(packages/sfml_system.2.5.1/build/native)
+include_directories(packages/sfml_system.2.5.1/build/native/include)
+include_directories(packages/sfml_system.2.5.1/build/native/include/SFML)
+include_directories(packages/sfml_system.2.5.1/build/native/include/SFML/Audio)
+include_directories(packages/sfml_system.2.5.1/build/native/include/SFML/Graphics)
+include_directories(packages/sfml_system.2.5.1/build/native/include/SFML/Network)
+include_directories(packages/sfml_system.2.5.1/build/native/include/SFML/System)
+include_directories(packages/sfml_system.2.5.1/build/native/include/SFML/Window)
+
+add_executable(game1
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/AlResource.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/Export.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/InputSoundFile.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/Listener.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/Music.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/OutputSoundFile.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/Sound.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundBuffer.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundBufferRecorder.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundFileFactory.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundFileFactory.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundFileReader.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundFileWriter.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundRecorder.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundSource.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio/SoundStream.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/BlendMode.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/CircleShape.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Color.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/ConvexShape.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Drawable.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Export.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Font.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Glsl.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Glsl.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Glyph.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Image.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/PrimitiveType.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Rect.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Rect.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/RectangleShape.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/RenderStates.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/RenderTarget.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/RenderTexture.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/RenderWindow.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Shader.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Shape.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Sprite.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Text.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Texture.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Transform.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Transformable.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/Vertex.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/VertexArray.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/VertexBuffer.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics/View.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/Export.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/Ftp.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/Http.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/IpAddress.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/Packet.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/Socket.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/SocketHandle.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/SocketSelector.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/TcpListener.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/TcpSocket.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network/UdpSocket.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Clock.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Err.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Export.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/FileInputStream.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/InputStream.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Lock.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/MemoryInputStream.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Mutex.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/NativeActivity.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/NonCopyable.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Sleep.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/String.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/String.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Thread.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Thread.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/ThreadLocal.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/ThreadLocalPtr.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/ThreadLocalPtr.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Time.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Utf.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Utf.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Vector2.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Vector2.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Vector3.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System/Vector3.inl
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Clipboard.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Context.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/ContextSettings.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Cursor.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Event.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Export.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/GlResource.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Joystick.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Keyboard.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Mouse.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Sensor.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Touch.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/VideoMode.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/Window.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/WindowHandle.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window/WindowStyle.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Audio.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Config.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/GpuPreference.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Graphics.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Main.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Network.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/OpenGL.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/System.hpp
+        packages/sfml_system.2.5.1/build/native/include/SFML/Window.hpp
+        cAbsClass.h
+        cBird.cpp
+        cBird.h
+        cCactus.cpp
+        cCactus.h
+        cGame.cpp
+        cGame.h
+        cHeartBonus.cpp
+        cHeartBonus.h
+        cPlayer.cpp
+        cPlayer.h
+        cScore.cpp
+        cScore.h
+        cScoreBonus.cpp
+        cScoreBonus.h
+        main.cpp)
